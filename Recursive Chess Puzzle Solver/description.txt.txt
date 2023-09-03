@@ -1,0 +1,45 @@
+Recursive Chess Puzzle Solver
+
+
+Description
+
+
+
+User will enter 2 lines of input. First line will be the name of the board file. Second line will be the name of the opponentmoves file.
+You are given 2 example puzzle files with the names ex_board1.txt, ex_board2.txt, ex_opponent1.txt and ex_opponent2.txt
+First line of board file will be either white or black. This line describes the color of the chess pieces that you control.
+Each remaining line of board file will contain name of a chess piece and its location separated by whitespace. (For example, BQ a5). 
+Locations will always be given in lowercase. (For example: h5)
+In short, board file will describe the initial configuration of the puzzle.
+Piece name encodings are given in the below table.
+Piece Code	Piece Name
+BK	Black King
+BQ	Black Queen
+BB	Black Bishop
+BN	Black Knight
+BR	Black Rook
+BP	Black Pawn
+WK	White King
+WQ	White Queen
+WB	White Bishop
+WN	White Knight
+WR	White Rook
+WP	White Pawn
+Each line of opponentmoves file will either contain a single move or contain a list of moves separated by a comma (,).
+A move is two locations separated by a whitespace. (For example: the move a5 b6 means moving the piece on a5 to b6).
+Your main task is to find moves for the given color that achieves a checkmate. However, there are further constraints:
+Your first move should force your opponent to only be able to make the moves given in the first line of opponentmoves file.
+In other words, after you make your first move, only valid moves your opponent can make should be the moves in the first line of opponentmoves file.
+If there are multiple moves in a line of opponentmoves file, always assume the opponent will choose to make the first move in the list.
+Likewise, after your second move, your opponent's only valid moves should be the moves in the second line of opponentmoves file.
+With a similar logic, for example, if there are 5 lines in opponentmoves file, you need to find 6 moves that achieves a checkmate and print it.
+As long as you assume opponent will always do the first move in every corresponding line, you will find a unique solution.
+For further clarification, check the examples. Also make sure you check the Example.html file in /WebContent folder by opening it on your browser.
+You need to consider valid moves for every chess piece. However, please ignore the following special moves: En passant, Castle, Pawn Promotion.
+You can assume the given puzzle will always have a solution.
+
+
+
+
+
+
