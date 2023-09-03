@@ -1,12 +1,6 @@
-# separator	Main.py_0_false.txt
+
 board_file = input()
 opponent_file = input()
-# DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
-
-# separator	Main.py_1_true.txt
-
-
-
 
 def board_creator(board_file):
     board = [[None for i in range(8)] for j in range(8)]
